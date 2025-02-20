@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Matching Game</h1>
+        <div class="game-board">
+            <div class="column" id="english-column"></div>
+            <div class="column" id="chinese-pinyin-column"></div>
+            <div class="column" id="chinese-characters-column"></div> <!-- New column -->
+        </div>
+        <div class="controls">
+            <button id="restart-btn">Restart Game</button>
+            <button id="add-word-btn">Add New Word</button>
+            <button id="download-btn">Download Words</button>
+            <input type="file" id="uploadWordsInput" accept=".json" style="display: none;">
+            <button id="uploadWordsButton">Upload Words</button>
+        </div>
+        <div class="info">
+            <p>Time: <span id="timer">0</span>s</p>
+            <p>Score: <span id="score">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
